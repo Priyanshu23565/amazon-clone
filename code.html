@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">amazon.in</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Amazon.in" />
+    </div>
+    <div class="nav-right">
+        <div class="nav-item">Hello, Sign in<br /><strong>Account & Lists</strong></div>
+        <div class="nav-item">Returns<br /><strong>& Orders</strong></div>
+        <div class="cart-toggle" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</div>
+    </div>
+</header>
+
+<div class="container" id="product-list"></div>
+
+<div id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <hr />
+    <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
